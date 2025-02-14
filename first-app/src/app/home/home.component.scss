@@ -1,0 +1,13 @@
+div{
+    color: rebeccapurple;
+    // this is called nesting that's why scss is preferred over css
+    p{
+        color: aqua;
+    }
+}
+
+button{
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}

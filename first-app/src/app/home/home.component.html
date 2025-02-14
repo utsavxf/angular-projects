@@ -1,0 +1,8 @@
+<div>Code with {{name}} 
+</div>
+<button (click)="changeName()">Change Name</button>
+
+<!-- <a routerLink="/about">Go to about</a> --> 
+<!-- we can also do make this routerLink a bit dynamic -->
+
+<a [routerLink]="['/','about','test']">Go to About</a>
