@@ -11,8 +11,12 @@ export const routes: Routes = [
         loadComponent:()=>import('./home/home.component').then((c)=>c.HomeComponent)
     },
     {
-        path:'about/:id',
+        path:'about',
         loadComponent:()=>import('./components/about/about.component').then((c)=>c.AboutComponent)
+    },
+    {
+        path:'admin',
+        loadComponent:()=>import('./admin/admin.component').then((c)=>c.AdminComponent)
     },
 
 ];
