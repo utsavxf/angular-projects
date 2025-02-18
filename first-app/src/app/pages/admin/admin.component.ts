@@ -2,7 +2,7 @@ import { NgClass, NgIf, NgStyle } from '@angular/common';
 import { Component, signal } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { CoursesComponent } from '../courses/courses.component';
-import { Strings } from '../enum/strings.enum';
+import { Strings } from '../../enum/strings.enum';
 
 @Component({
   selector: 'app-admin',

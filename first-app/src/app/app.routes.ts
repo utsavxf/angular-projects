@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { AboutComponent } from './components/about/about.component';
+import { HomeComponent } from './pages/home/home.component';
+import { AboutComponent } from './pages/about/about.component';
 //lazy loading me we give imports in the code only,no need to specify here
 export const routes: Routes = [
     // {path:'',component:HomeComponent},
@@ -8,15 +8,15 @@ export const routes: Routes = [
 
     {
         path:'',
-        loadComponent:()=>import('./home/home.component').then((c)=>c.HomeComponent)
+        loadComponent:()=>import('./pages/home/home.component').then((c)=>c.HomeComponent)
     },
     {
         path:'about',
-        loadComponent:()=>import('./components/about/about.component').then((c)=>c.AboutComponent)
+        loadComponent:()=>import('./pages/about/about.component').then((c)=>c.AboutComponent)
     },
     {
         path:'admin',
-        loadComponent:()=>import('./admin/admin.component').then((c)=>c.AdminComponent)
+        loadComponent:()=>import('./pages/admin/admin.component').then((c)=>c.AdminComponent)
     },
 
 ];
